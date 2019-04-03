@@ -1,0 +1,18 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <!-- 过滤器的配置 -->
+  <filter>
+    <filter-name>MyFirstFilter</filter-name>
+    <filter-class>MyFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>MyFirstFilter</filter-name>
+    <!-- 要过滤的请求资源的URL -->
+    <url-pattern>/index.jsp</url-pattern>
+  </filter-mapping>
+
+</web-app>
