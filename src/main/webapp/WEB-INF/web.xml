@@ -4,7 +4,7 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
-  <!-- 过滤器的配置 -->
+   <!--过滤器的配置 -->
   <filter>
     <filter-name>MyFirstFilter</filter-name>
     <filter-class>MyFilter</filter-class>
@@ -15,4 +15,15 @@
     <url-pattern>/index.jsp</url-pattern>
   </filter-mapping>
 
+  <!--类似controller，有注解WebServlet代替-->
+  <!--<servlet>-->
+    <!--<servlet-name>myServlet</servlet-name>-->
+    <!--<servlet-class>MyServlet</servlet-class>-->
+    <!--<load-on-startup>1</load-on-startup>-->
+  <!--</servlet>-->
+
+  <!--<servlet-mapping>-->
+    <!--<servlet-name>myServlet</servlet-name>-->
+    <!--<url-pattern>/</url-pattern>-->
+  <!--</servlet-mapping>-->
 </web-app>
