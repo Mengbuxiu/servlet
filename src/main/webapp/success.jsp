@@ -15,12 +15,12 @@
 <body>
     <h1>success!</h1>
     <%--<c:if test="${not empty name}">--%>
-    <input value="<% Object name = request.getAttribute("name");
-        System.out.println(name);
-    %>">
-<%--
-    </c:if>
---%>
+    <label>
+        <input value="<%=request.getAttribute("name")%>"/>
+    </label>
+    <%--
+        </c:if>
+    --%>
     <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
 </body>
 </html>
