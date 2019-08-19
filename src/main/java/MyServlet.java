@@ -16,6 +16,8 @@ public class MyServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //super.doGet(req, resp);
         System.out.println("this is get request");
+        resp.getHeaderNames().forEach(System.out::print);
+        System.out.println("resp.getHeader(\"Allow\") = " + resp.getHeader("Allow"));
         req.setAttribute("name","zhenglin");
         req.getRequestDispatcher("success.jsp").forward(req,resp);
 //        resp.sendRedirect("success.jsp");
@@ -24,6 +26,7 @@ public class MyServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //super.doPost(req, resp);
+
         System.out.println("this is post request");
     }
 }
