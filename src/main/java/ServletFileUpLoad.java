@@ -36,6 +36,7 @@ public class ServletFileUpLoad extends HttpServlet {
         String serverPath = req.getServletContext().getRealPath("/");
         String name = serverPath + filename;
         File path = new File(name);
+
         if (!path.exists()) {
             path.createNewFile();
         }
@@ -47,5 +48,7 @@ public class ServletFileUpLoad extends HttpServlet {
         }
         fos.close();
         is.close();
+        // 该如何等比？
+        ImageUtil.changeSize(name);
     }
 }
